@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>URL Scanner</title>
   <link rel="stylesheet" href="popup.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="popup-container">
@@ -12,8 +13,11 @@
     <div class="input-container">
       <input type="text" id="urlInput" placeholder="Enter URL to scan">
       <button id="scanButton">Scan URL</button>
+      <div class="loader" id="loader"></div>
     </div>
     <div id="result"></div>
+    <div class="success-icon" id="successIcon">✔</div>
+    <p id="safeMessage" class="safe-message"></p> <!-- Added this line for the message -->
   </div>
   <script src="popup.js"></script>
 </body>
